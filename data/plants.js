@@ -8,3 +8,5 @@ const plants = [
         description: "this is what a pumpkin looks like"
       },
 ]
+
+module.exports = plants;

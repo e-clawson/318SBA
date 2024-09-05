@@ -6,3 +6,5 @@ const classification = [
         subSpecies: ["pepo"],
     }
 ]
+
+module.exports = classification;

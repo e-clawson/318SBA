@@ -11,3 +11,5 @@ const zones = [
         desc: "this zone stretches from x to y and includes z. Plants that are suitable for this climate include blah blah blah"
     }
 ]
+
+module.exports = zones;
