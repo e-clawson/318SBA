@@ -16,8 +16,12 @@ Plants will have Get, Post, Patch/Put, and Delete requests, while the other two 
 
 # Installation 
 
-To utilize this repo, please clone it to your local device, and follow these steps: 
+To utilize this repo, please clone it to your local device, and type the following comands into your terminal to configure the project: 
 
+git init
+npm init
+npm i express
+npm i nodemon --save-dev
 
 
 # Introduction
