@@ -23,6 +23,23 @@ npm init
 npm i express
 npm i nodemon --save-dev
 
+to start the nodemon server type the following into your terminal: 
+
+npx nodemon 
+
+to close out of nodemon use the commnad: 
+
+cntrl ^ c 
+
+The port designated for this project to run on is 3000, to utilize this port please use the following base url: 
+
+http://localhost:3000/
+
+
+# further resources 
+for questions regarding the use of nodemon, please see the nodemon documentation: 
+https://www.npmjs.com/package/nodemon 
+
 
 # Introduction
 This assessment measures your understanding of Node and Express and your capability to implement their features in a practical manner. You have creative freedom in the topic, material, and purpose of the web application you will be developing, so have fun with it! However, remember to plan the scope of your project to the timeline you have been given.
