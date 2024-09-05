@@ -1,10 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-//add routes to other areas
-const plants = require("../data/plants");
-// const zones = require("../data/zones");
-// const classification = require("../data/classification");
+const plants = require("../data/plants.js");
+
+router
+    .route("/")
+    .get((req,res) => {
+        res.json(plants);
+    })
 
 router
     .route("/:plantName") 
@@ -51,4 +54,4 @@ router
         });
     })
 
-module.exports = router;
+module.exports = router ;
