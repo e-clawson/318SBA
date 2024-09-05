@@ -88,11 +88,18 @@ Create your application locally, and initialize a local git repo. Make frequent 
 - Create and use at least two pieces of custom middleware. (5%)
 - Create and use error-handling middleware. (5%)
 - Use at least three different data categories (e.g., users, posts, or comments). (5%)
+    Created Plants, Zones, and Classification 
 - Utilize reasonable data structuring practices. (5%)
+    - placed all the data into its own folder
+    - will place routes into their own files
 - Create GET routes for all data that should be exposed to the client. (5%) 
+    - created get routes for all data (index.js lines 15, 25, and 29)
 - Create POST routes for data, as appropriate. At least one data category should allow for client creation via a POST request. (5%)
+    will make for plants 
 - Create PATCH or PUT routes for data, as appropriate. At least one data category should allow for client manipulation via a PATCH or PUT request. (5%)
+    will make for plants 
 - Create DELETE routes for data, as appropriate. At least one data category should allow for client deletion via a DELETE request. (5%)
+    will make for plants 
 - Include query parameters for data filtering, where appropriate. At least one data category should allow for additional filtering through the use of query parameters. (5%)
     Note: DO NOT use API keys; this makes it more difficult for instructors to grade finished projects efficiently. 
 - Utilize route parameters, where appropriate.(5%)

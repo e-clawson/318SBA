@@ -10,6 +10,7 @@ const classification = require("./data/classification");
 
 app.get("/", (req, res) => {
     res.send("welcome to the plant database!");
+    
 });
 
 app.get("/plants", (req,res) => {
@@ -29,6 +30,11 @@ app.get("/zones", (req,res) => {
 app.get("/classification", (req,res) => {
     res.json(classification);
 });
+
+app.use((req,res) => {
+   res.status(404); 
+   res.json({error: "resource not found"});
+})
 
 app.listen(port, () => {
     console.log(`server is listening on port: ${port}`);
