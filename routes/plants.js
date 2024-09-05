@@ -2,8 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 //add routes to other areas
-const zones = require("../data/zones");
-const classification = require("../data/classification");
+const plants = require("../data/plants");
+// const zones = require("../data/zones");
+// const classification = require("../data/classification");
 
 router
     .route("/:plantName") 

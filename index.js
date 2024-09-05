@@ -1,5 +1,4 @@
 //main file 
-
 const express = require("express");
 const bodyParser = require("body-parser")
 
@@ -9,21 +8,17 @@ app.use(bodyParser.json({ extended: true }));
 const app = express();
 const port = 3000;
 
-const plants = require("./data/plants");
+const plants = require("./routes/plants");
 const zones = require("./data/zones");
 const classification = require("./data/classification");
+
+app.use("routes/plants.js", plants);
+app.use("routes/zones.js", zones);
+app.use("routes/classification.js", classification);
 
 app.get("/", (req, res) => {
     res.send("welcome to the plant database!");
     
-});
-
-app.get("/zones", (req,res) => {
-    res.json(zones);
-});
-
-app.get("/classification", (req,res) => {
-    res.json(classification);
 });
 
 //custom error middleware 
