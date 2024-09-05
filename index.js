@@ -22,6 +22,14 @@ app.get("/plants/:plantName", (req,res) => {
     else next();
 })
 
+app.get("/zones", (req,res) => {
+    res.json(zones);
+});
+
+app.get("/classification", (req,res) => {
+    res.json(classification);
+});
+
 app.listen(port, () => {
     console.log(`server is listening on port: ${port}`);
 });
