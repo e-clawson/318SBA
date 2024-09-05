@@ -16,6 +16,13 @@ app.get("/plants", (req,res) => {
     res.json(plants);
 });
 
+app.get("/plants/:id", (req,res) => {
+    const displayPlant = plants.find((p) => p.id == req.params.id);
+    if (displayPlant) res.json(displayPlant);
+    else next();
+
+})
+
 app.listen(port, () => {
     console.log(`server is listening on port: ${port}`);
 });
