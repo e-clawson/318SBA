@@ -86,12 +86,14 @@ Create your application locally, and initialize a local git repo. Make frequent 
 
 # Requirements(list)
 - Create and use at least two pieces of custom middleware. (5%)
+    - (1) created custom error-handling middleware in index.js on line 35 
 - Create and use error-handling middleware. (5%)
+    - (1) created custom error-handling middleware in index.js on line 35, used in plant name route get request in index.js on line 23
 - Use at least three different data categories (e.g., users, posts, or comments). (5%)
     Created Plants, Zones, and Classification 
 - Utilize reasonable data structuring practices. (5%)
     - placed all the data into its own folder
-    - will place routes into their own files
+    - will place routes into their own files (maybe just plants routes since it will have all the rest)
 - Create GET routes for all data that should be exposed to the client. (5%) 
     - created get routes for all data (index.js lines 15, 25, and 29)
 - Create POST routes for data, as appropriate. At least one data category should allow for client creation via a POST request. (5%)
