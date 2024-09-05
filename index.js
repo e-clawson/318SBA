@@ -3,8 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser")
 
 const plants = require("./routes/plants");
-// const zones = require("./data/zones")
-// const classification = require("./data/classification");
+const zones = require("./routes/zones")
+const classification = require("./routes/classification");
 
 const app = express();
 const port = 3000;
@@ -13,15 +13,13 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json({ extended: true }));
 
 app.use("/plants", plants);
+app.use("/zones", zones);
+app.use("/classification", classification);
 
 app.get("/", (req, res) => {
     res.send("welcome to the plant database!");
     
 });
-
-
-// app.use("routes/zones.js", zones)
-// app.use("routes/classification.js", classification);
 
 //custom error middleware 
 app.use((req,res) => {

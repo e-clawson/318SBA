@@ -6,8 +6,8 @@ const plants = require("../data/plants");
 router
     .route("/")
     .get((req,res) => {
-        res.send("made it to plants!");
-        // res.json(plants);
+        // res.send("made it to plants!");
+        res.json(plants);
     })
 
 router

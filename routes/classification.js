@@ -4,7 +4,7 @@ const router = express.Router();
 const classification = require("../data/classification");
 
 router
-    .get("/classification", (req,res) => {
+    .get("/", (req,res) => {
         res.json(classification);
     });
 
