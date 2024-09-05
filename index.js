@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
     res.send("welcome to the plant database!");
 });
 
+app.get("/plants", (req,res) => {
+    res.json(plants);
+});
+
 app.listen(port, () => {
     console.log(`server is listening on port: ${port}`);
 });
