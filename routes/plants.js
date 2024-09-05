@@ -1,12 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-const plants = require("../data/plants.js");
+const plants = require("../data/plants");
 
 router
     .route("/")
     .get((req,res) => {
-        res.json(plants);
+        res.send("made it to plants!");
+        // res.json(plants);
     })
 
 router
@@ -54,4 +55,4 @@ router
         });
     })
 
-module.exports = router ;
+module.exports = router;

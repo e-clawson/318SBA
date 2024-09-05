@@ -4,8 +4,8 @@ const router = express.Router();
 const zones = require("../data/zones");
 
 router 
-    .get("/zones", (req,res) => {
+    .get("/", (req,res) => {
     res.json(zones);
 });
 
-module.exports = router ;
+module.exports = router;
