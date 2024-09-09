@@ -93,7 +93,7 @@ Create your application locally, and initialize a local git repo. Make frequent 
     Created Plants, Zones, and Classification 
 - Utilize reasonable data structuring practices. (5%)
     - placed all the data into its own folder
-    - will place routes into their own files (maybe just plants routes since it will have all the rest)
+    - placed routes into their own files (maybe just plants routes since it will have all the rest)
 - Create GET routes for all data that should be exposed to the client. (5%) 
     - created get routes for all data (index.js lines 15, 25, and 29)
 - Create POST routes for data, as appropriate. At least one data category should allow for client creation via a POST request. (5%)
