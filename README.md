@@ -97,7 +97,8 @@ Create your application locally, and initialize a local git repo. Make frequent 
 - Create GET routes for all data that should be exposed to the client. (5%) 
     - created get routes for all data (index.js lines 15, 25, and 29)
 - Create POST routes for data, as appropriate. At least one data category should allow for client creation via a POST request. (5%)
-    will make for plants 
+    will 
+    make for plants 
 - Create PATCH or PUT routes for data, as appropriate. At least one data category should allow for client manipulation via a PATCH or PUT request. (5%)
     will make for plants 
 - Create DELETE routes for data, as appropriate. At least one data category should allow for client deletion via a DELETE request. (5%)
