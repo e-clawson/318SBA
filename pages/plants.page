@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>#title#</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <form>
+         <label for="plantName">Plant Name</label><br>
+            <input type="text" id="plantName" name="plantName"><br>
+        <label for="nickName">Plant Nickname:</label><br>
+            <input type="text" id="nickName" name="nickName">
+        <label for="classification">Plant classification:</label><br>
+            <input type="text" id="classification" name="classification">
+        <label for="biNom">Plant BiNomial Nomenclature</label><br>
+            <input type="text" id="biNom" name="biNom">
+        <label for="USDAZone">USDA Hardiness Zone(s)</label><br>
+            <input type="text" id="USDAZone" name="USDAZone">
+        <label for="description">Plant Description</label><br>
+            <input type="text" id="description" name="description">
+      </form>
+    </div>
+  </body>
+</html>
